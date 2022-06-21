@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de monedas</h1>
+    <form>
+        <label>Selecciona la divisa inicial<select id='selector_moneda_origen' class='selector-moneda' value=''>Selecciona una divisa</select><span></span></label><br/>
+        <label>Selecciona la divisa final<select id='selector_moneda_destino' class='selector-moneda' value=''>Selecciona una divisa</select><span></span></label><br/>
+        <label for='input_cantidad' >Cantidad a convertir
+            <input id='input_cantidad' name='input_cantidad' type="number" min=0.0001>
+        </label>
+        
+        <button type='button' id='boton_convertir' disabled=true>Convertir</button>
+        <h3>Resultado: <span id='resultado'></span></h3>
+        <div id='tabla'></div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"></script>
+    <script  src='./App.js' type='text/javascript' ></script>
+</body>
+</html>

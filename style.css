@@ -1,0 +1,7 @@
+.selector-moneda:invalid + span::after{
+    content:'Elige dos divisas diferentes.';
+    display: inline-block;
+    color: red;
+    font-size: 1em;
+  }
+
